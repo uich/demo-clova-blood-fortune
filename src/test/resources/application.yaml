@@ -1,0 +1,3 @@
+cek.verifier:
+  signature.enabled: false
+  extension-id.enabled: false
