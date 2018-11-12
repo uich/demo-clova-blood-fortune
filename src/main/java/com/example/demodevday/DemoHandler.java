@@ -52,16 +52,18 @@ public class DemoHandler {
   }
 
   String getMessage(BloodType bloodType) {
+    String message = bloodType + "型のあなたの今日は、";
     switch (bloodType) {
       case A:
-        return "A型のあなたの今日はとても良い日でしょう。";
+        return message + "とても良い日でしょう。";
       case B:
-        return "B型のあなたの今日はうきうきする日でしょう。";
+        return message + "今日はうきうきする日でしょう。";
       case O:
-        return "O型のあなたの今日は気分がとても上がる日でしょう。";
+        return message + "気分がとても上がる日でしょう。";
       case AB:
-        return "AB型のあなたの今日は仕事が捗る日でしょう。";
+        return message + "仕事が捗る日でしょう。";
     }
     throw new IllegalArgumentException();
   }
+
 }
