@@ -17,7 +17,7 @@ public class DemoHandler {
   CEKResponse handleLaunch() {
     return CEKResponse.builder()
         .outputSpeech(OutputSpeech.text("あなたは何型ですか？"))
-        .shouldEndSession(true)
+        .shouldEndSession(false)
         .build();
   }
 
